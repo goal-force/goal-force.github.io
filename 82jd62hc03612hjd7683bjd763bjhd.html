@@ -800,7 +800,7 @@ future research.
             
             <div id="demo-display-container">
               <img id="demo-display-image" src="" alt="Selected demo PNG" style="display: none;">
-              <video id="demo-display-video" playsinline controls muted style="display: none;"></video>
+              <video id="demo-display-video" playsinline autoplay muted loop style="display: none;"></video>
             </div>
           </div>
 
@@ -1339,13 +1339,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // When video ends, show PNG again
-    displayVideo.onended = () => {
-      showImage(basePngPath);
-      if (currentActiveSeedButton) {
-        currentActiveSeedButton.classList.remove('is-active');
-        currentActiveSeedButton = null;
-      }
-    };
+    // displayVideo.onended = () => {
+    //   showImage(basePngPath);
+    //   if (currentActiveSeedButton) {
+    //     currentActiveSeedButton.classList.remove('is-active');
+    //     currentActiveSeedButton = null;
+    //   }
+    // };
   }
 
   // --- STEP 2: CREATE GOAL FORCE BUTTONS ---
