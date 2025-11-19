@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Video generalization models can learn physics-based controls from synthetic data and generalize this control across diverse geometries, settings, and materials.">
-  <meta property="og:title" content="Force Prompting: Video Generation Models Can Learn and Generalize Physics-based Control Signals"/>
-  <meta property="og:description" content="Video generalization models can learn physics-based controls from synthetic data and generalize this control across diverse geometries, settings, and materials."/>
+  <meta name="description" content="Goal Force is a novel video generation framework that allows users to define goals via explicit force vectors and intermediate dynamics, mirroring how humans conceptualize physical tasks.">
+  <meta property="og:title" content="Goal Force: Teaching Video Models To Accomplish Physics-Conditioned Goals"/>
+  <meta property="og:description" content="Goal Force is a novel video generation framework that allows users to define goals via explicit force vectors and intermediate dynamics, mirroring how humans conceptualize physical tasks."/>
   <meta property="og:url" content="https://force-prompting.github.io/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <!-- <meta property="og:image" content="goal-force-static/image/your_banner_image.png" /> -->
@@ -380,6 +380,22 @@
 </section>
 
 
+<section class="section" style="padding-top: 20px; padding-bottom: 0;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="notification is-light" style="background-color: #f5f5f5; border: 1px solid #dbdbdb;">
+            <p style="font-size: 1.1rem;">
+              <b>TL;DR:</b> We train a video model which allows users to define goals via explicit force vectors, and then the model generates the actions that make that force happen.
+            </p>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="columns is-multiline is-variable is-4 is-vcentered is-centered" style="padding-top: 0;">
@@ -388,27 +404,17 @@
 
         <div class="columns is-centered has-text-centered">
           <div class="column is-full-width">
-            <h2 class="title is-3">1. Train a Force Conditioned Video Model <br>with <b style="color:red">Limited</b> Synthetic Data</h2>
-
-            <h3 class="title is-4"><b style="color:pink">Local Force Model (Poke)</h3>
+            <h2 class="title is-3">Goal Force Prompting</h2>
               <video class="responsive-video" poster="" autoplay="" muted="" loop="" playsinline="" style="width: 65%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-                <source src="./goal-force-static/teaser/teaser_keynote_video_train_poke.mp4" type="video/mp4">
+                <source src="./goal-force-static/teaser/teaser_explaining_goal_force.mp4" type="video/mp4">
               </video>
-              <br><br>
-              <h3 class="title is-4"><b style="color:lightblue">Global Force Model (Wind)</h3>
-                <video class="responsive-video" poster="" autoplay="" muted="" loop="" playsinline="" style="width: 65%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-                  <source src="./goal-force-static/teaser/teaser_keynote_video_train_wind.mp4" type="video/mp4">
-                </video>      
-
-
           </div>
-
       </div>
 
         <!-- Weird for this to be here, but whatever -->
         <div class="columns is-centered has-text-centered">
           <div class="column is-full-width" style="margin-top: 3rem; margin-bottom: 1.5rem;">
-            <h2 class="title is-3">2. Video Model <b style="color:red">Generalizes</b> Force Conditioning</h2>
+            <h2 class="title is-3">Video Generation Model Generalizes Goal Force Conditioning</h2>
           </div>
         </div>
 
@@ -421,7 +427,7 @@
                     <a href="index.html#global-force-prompts-demo" class="button is-secondary subtitle-button">See More</a>
                   </div>
                   <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-                    <source src="./goal-force-static/teaser/teaser_keynote_video_wind_settings.mp4" type="video/mp4" controls height="240">
+                    <source src="./goal-force-static/teaser/Goal Force website (teaser cell 0,0) (740 x 375 px).mp4" type="video/mp4" controls height="240">
                   </video>
                 </div>
               </div>
@@ -429,11 +435,40 @@
               <div class="column is-half">
                 <div class="has-text-centered">
                   <div class="subtitle-with-button" style="margin-bottom: 0.5rem; height: auto; display: block; margin-left: auto; margin-right: auto;">
-                    <h2 class="title is-4" style="color:lightpink">Generalizes to Different Objects and Geometries</h2>
+                    <h2 class="title is-4" style="color:lightblue">Generalizes to Tool-Object Interaction</h2>
                     <a href="index.html#local-force-prompts-demo" class="button is-secondary subtitle-button">See More</a>
                   </div>
                   <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-                    <source src="./goal-force-static/teaser/teaser_keynote_video_poke_generalize_objects.mp4" type="video/mp4">
+                    <source src="./goal-force-static/teaser/Goal Force website (teaser cell 0,1) (740 x 375 px).mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-centered">
+          <div class="column is-10-mobile is-10-tablet is-8-desktop is-8-widescreen"> <div class="columns is-variable is-8"> <div class="column is-half">
+                <div class="has-text-centered">
+                  <div class="subtitle-with-button" style="margin-bottom: 0.5rem;">
+                    <h2 class="title is-4" style="color:lightblue">Generalizes to Human-Object Interaction</h2>
+                    <a href="index.html#global-force-prompts-demo" class="button is-secondary subtitle-button">See More</a>
+                  </div>
+                  <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                    <source src="./goal-force-static/teaser/Goal Force website (teaser cell 1,0) (740 x 375 px).mp4" type="video/mp4" controls height="240">
+                  </video>
+                </div>
+              </div>
+
+              <div class="column is-half">
+                <div class="has-text-centered">
+                  <div class="subtitle-with-button" style="margin-bottom: 0.5rem; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                    <h2 class="title is-4" style="color:lightblue">Generalizes to (non-Human)-Object Interaction</h2>
+                    <a href="index.html#local-force-prompts-demo" class="button is-secondary subtitle-button">See More</a>
+                  </div>
+                  <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                    <source src="./goal-force-static/teaser/Goal Force website (teaser cell 1,1) (740 x 375 px).mp4" type="video/mp4">
                   </video>
                 </div>
               </div>
@@ -447,11 +482,11 @@
               <div class="column is-half">
                 <div class="has-text-centered">
                   <div class="subtitle-with-button" style="margin-bottom: 0.5rem;">
-                    <h2 class="title is-4" style="color:lightblue">Generalizes to Different Affordances</h2>
+                    <h2 class="title is-4" style="color:pink">Probabilistic Task Completion</h2>
                     <a href="index.html#global-force-prompts-demo" class="button is-secondary subtitle-button">See More</a>
                   </div>
                   <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-                    <source src="./goal-force-static/teaser/teaser_keynote_video_wind_affordances.mp4" type="video/mp4">
+                    <source src="./goal-force-static/teaser/Goal Force website (teaser cell 2,0) (740 x 375 px).mp4" type="video/mp4">
                   </video>
                 </div>
               </div>
@@ -459,16 +494,16 @@
               <div class="column is-half">
                 <div class="has-text-centered">
                   <div class="subtitle-with-button" style="margin-bottom: 0.5rem;">
-                    <h2 class="title is-4" style="color:pink">Hints at Mass Understanding</h2>
+                    <h2 class="title is-4" style="color:pink">Visual Planning with Physical Constraints</h2>
                     <a href="index.html#mass-understanding" class="button is-secondary subtitle-button">See More</a>
                   </div>
                   <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-                    <source src="./goal-force-static/teaser/teaser_keynote_video_poke_hint_at_material_laundry.mp4" type="video/mp4">
+                    <source src="./goal-force-static/teaser/Goal Force website (teaser cell 2,1) (740 x 375 px).mp4" type="video/mp4">
                   </video>
                 </div>
-              </div>
-              
+              </div>              
             </div>
+            <br>
           </div>
         </div>
 
@@ -486,27 +521,23 @@
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
           <p>
-            We investigate using physical forces as a control
-signal for video generation and propose <b>force prompts</b> which enable users to interact
-with images through both localized point forces, such as poking a plant, and global
-wind force fields, such as wind blowing on fabric.
+Recent advancements in video generation have enabled the development of "world models"
+capable of simulating potential futures for robotics and planning. 
+However, specifying precise goals for these models remains a challenge; 
+text instructions are often too abstract to capture physical nuances, 
+while target images are frequently infeasible to specify for dynamic tasks. 
 </p>
-<p>
-The main challenge of force prompting is the difficulty in obtaining high quality paired force-video training
-data. Our key finding is that video generation models can <b>generalize
-remarkably well</b> when adapted to follow physical force conditioning from videos
-synthesized by Blender, even with limited demonstrations of few objects (e.g.,
-flying flags, rolling balls, etc.). Our method can generate videos which simulate
-forces across diverse geometries, settings, and materials. We also try to understand
-the source of this generalization and perform ablations on the training data that
-reveal two key elements: visual diversity and the use of specific text keywords
-during training.
+To address this, we introduce <b>Goal Force</b>, a novel framework that allows users to define goals 
+via explicit force vectors and intermediate dynamics, mirroring how humans conceptualize physical tasks. 
+We train a video generation model on a curated dataset of synthetic causal primitives—such as 
+elastic collisions and falling dominos—teaching it to propagate forces through time and space. 
+Despite being trained on simple physics data, our model exhibits remarkable zero-shot generalization to complex, 
+real-world scenarios, including tool manipulation and multi-object causal chains. 
 </p>
-<p>
-In addition, our approach is trained on only around 15k training examples
-for a single day on four A100 GPUs, making these techniques broadly accessible for
-future research.
-          </p>
+Our results suggest that by grounding video generation in fundamental physical interactions, 
+models can emerge as implicit neural physics simulators, enabling precise, 
+physics-aware planning without reliance on external engines.
+</p>
         </div>
       </div>
     </div>
@@ -520,13 +551,17 @@ future research.
     <div class="hero-body">
       <br><br>
       <div class="columns is-centered has-text-centered">
-        <h2 class="title is-3">Interacting with Images Using Force Prompts</h2>
+        <h2 class="title is-3">Interacting with Image using Goal Force Prompts</h2>
       </div>
       <h2 class="subtitle">
-        A user can interact with an image by specifying a force vector (location, angle, magnitude) on the image. With this force prompt, the video generator then generates the resultant scene. No physics simulator used at inference time!
+        A user can interact with an image by specifying a goal force vector (location, angle, magnitude) on the image. 
+        With this goal force prompt, the video generator then generates the resultant scene. No physics simulator used at inference time!
       </h2>
       <h2 class="subtitle">        
-        While currently the results are <b style="color:red">not real-time or per-frame causal</b> (though it is causal with respect to the conditioning signal), we believe that they show the potential of future video generation models as they get faster, more efficient, and more powerful.
+        While currently the results are <b style="color:red">not real-time or per-frame 
+          causal</b> (though it is causal with respect to the conditioning signal), 
+          we believe that they show the potential of future video generation models 
+          as they get faster, more efficient, and more powerful.
       </h2>
 
       <section class="section hero is-light" id="interactiveDemoGallery">
@@ -534,9 +569,9 @@ future research.
           
           <div class="columns is-centered">
             <div class="column is-two-thirds">
-              <h2 class="title is-3 has-text-centered" id="local-force-prompts-demo">Local Force Prompts</h2><br>
+              <h2 class="title is-3 has-text-centered" id="local-force-prompts-demo">Goal Force Prompts</h2><br>
               <h2 class="subtitle" style="margin-bottom: 1.5rem;">
-                <b>Interactive Demos:</b> Click an icon to select a scene. Then, select a <b>Goal Force</b> (if multiple exist) and a <b>Seed</b>.
+                Click an icon to select a scene. Then, select a <b>Goal Force</b> and a <b>seed</b> (if multiple exist).
               </h2>
             </div>
           </div>
@@ -794,7 +829,7 @@ future research.
             
             <div id="demo-display-container">
               <img id="demo-display-image" src="" alt="Selected demo PNG" style="display: none;">
-              <video id="demo-display-video" playsinline controls muted style="display: none;"></video>
+              <video id="demo-display-video" playsinline autoplay muted loop style="display: none;"></video>
             </div>
           </div>
 
@@ -1333,13 +1368,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // When video ends, show PNG again
-    displayVideo.onended = () => {
-      showImage(basePngPath);
-      if (currentActiveSeedButton) {
-        currentActiveSeedButton.classList.remove('is-active');
-        currentActiveSeedButton = null;
-      }
-    };
+    // displayVideo.onended = () => {
+    //   showImage(basePngPath);
+    //   if (currentActiveSeedButton) {
+    //     currentActiveSeedButton.classList.remove('is-active');
+    //     currentActiveSeedButton = null;
+    //   }
+    // };
   }
 
   // --- STEP 2: CREATE GOAL FORCE BUTTONS ---
