@@ -537,7 +537,7 @@ real-world scenarios, including tool manipulation and multi-object causal chains
 Our results suggest that by grounding video generation in fundamental physical interactions, 
 models can emerge as implicit neural physics simulators, enabling precise, 
 physics-aware planning without reliance on external engines.
-          </p>
+</p>
         </div>
       </div>
     </div>
@@ -551,13 +551,17 @@ physics-aware planning without reliance on external engines.
     <div class="hero-body">
       <br><br>
       <div class="columns is-centered has-text-centered">
-        <h2 class="title is-3">Interacting with Images Using Force Prompts</h2>
+        <h2 class="title is-3">Interacting with Image using Goal Force Prompts</h2>
       </div>
       <h2 class="subtitle">
-        A user can interact with an image by specifying a force vector (location, angle, magnitude) on the image. With this force prompt, the video generator then generates the resultant scene. No physics simulator used at inference time!
+        A user can interact with an image by specifying a goal force vector (location, angle, magnitude) on the image. 
+        With this goal force prompt, the video generator then generates the resultant scene. No physics simulator used at inference time!
       </h2>
       <h2 class="subtitle">        
-        While currently the results are <b style="color:red">not real-time or per-frame causal</b> (though it is causal with respect to the conditioning signal), we believe that they show the potential of future video generation models as they get faster, more efficient, and more powerful.
+        While currently the results are <b style="color:red">not real-time or per-frame 
+          causal</b> (though it is causal with respect to the conditioning signal), 
+          we believe that they show the potential of future video generation models 
+          as they get faster, more efficient, and more powerful.
       </h2>
 
       <section class="section hero is-light" id="interactiveDemoGallery">
@@ -565,9 +569,9 @@ physics-aware planning without reliance on external engines.
           
           <div class="columns is-centered">
             <div class="column is-two-thirds">
-              <h2 class="title is-3 has-text-centered" id="local-force-prompts-demo">Local Force Prompts</h2><br>
+              <h2 class="title is-3 has-text-centered" id="local-force-prompts-demo">Goal Force Prompts</h2><br>
               <h2 class="subtitle" style="margin-bottom: 1.5rem;">
-                <b>Interactive Demos:</b> Click an icon to select a scene. Then, select a <b>Goal Force</b> (if multiple exist) and a <b>Seed</b>.
+                Click an icon to select a scene. Then, select a <b>Goal Force</b> and a <b>seed</b> (if multiple exist).
               </h2>
             </div>
           </div>
