@@ -924,14 +924,6 @@ physics-aware planning without reliance on external engines.
         <source src="./goal-force-static/videos_training_data/Goal Force website (training data v1).mp4" type="video/mp4">
       </video>
 
-      <!-- <br><br>
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <a href="gallery_synthetic_training_data.html" class="button is-secondary"><i><b>See more examples!</b></i></a>
-        </div>
-      </div>
-      <br><br> -->
-
     </div>
   </div>
 </section>
@@ -942,96 +934,23 @@ physics-aware planning without reliance on external engines.
     <div class="hero-body">
       <br><br>
       <div class="columns is-centered has-text-centered">
-        <h2 class="title is-3" id="mass-understanding">Force Prompting Can Recreate Some Demos for<br>Prior Works that Use a Physics Simulator at Inference</h2>
+        <h2 class="title is-3">Ablation: Importance of Specificity of Text Prompt</h2>
       </div>
+
+      <br>
       <h2 class="subtitle has-text-centered">
-        To demonstrate the point force model's versatility, we curate a benchmark using first-frame images from some prominent physics-in-the-loop papers.
-        We are <b style="color:red">not claiming</b> that the Force Prompting method outperforms those methods on visual fidelity or physical realism.
-        Rather, we wish to illustrate that our purely neural method can handle some of the same visual scenarios almost as effectively as approaches which require some combination of 3D assets and explicit physics simulation at inference time. 
+         PLACEHOLDER!!
       </h2>
-      <div class="columns is-centered"> 
+      
 
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>Recreating a <b><a href="https://physdreamer.github.io/" target="_blank">PhysDreamer</a></b> (ECCV 2024) demo</i>
-          </h2>
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/videos-comparison-to-prior-works/step-5000__file_id__alocasiaphysdreamer1__xpos_0.30__ypos_0.65__angle_0.00__force_0.50___video_0_bold_arrow.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>Recreating a <b><a href="https://github.com/tyhuang0428/DreamPhysics" target="_blank">DreamPhysics</a></b> (AAAI 2025) demo</i>
-          </h2>
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/videos-comparison-to-prior-works/step-5000__file_id__DreamPhysicsPoke1__xpos_0.40__ypos_0.67__angle_0.00__force_0.50___video_0_bold_arrow.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>Recreating a <b><a href="https://mezzelfo.github.io/MotionCraft/" target="_blank">MotionCraft</a></b> (NeurIPS 2024) demo</i>
-          </h2>
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/videos-comparison-to-prior-works/step-5000__file_id__MotionCraftPoke1__xpos_0.66__ypos_0.40__angle_135.00__force_0.50__video_0_bold_arrow.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>Recreating a <b><a href="https://xpandora.github.io/PhysGaussian/" target="_blank">PhysGaussian</a></b> (CVPR 2024) demo</i>
-          </h2>
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/videos-comparison-to-prior-works/step-5000__file_id__PhyGaussianPoke1__xpos_0.35__ypos_0.57__angle_270.00__force_0.50__video_0_bold_arrow.mp4" type="video/mp4">
-          </video>
-        </div>
-
-      </div>
-
-      <div class="columns is-centered"> 
-
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>Recreating a <b><a href="https://stevenlsw.github.io/physgen/" target="_blank">PhysGen</a></b> (ECCV 2024) demo</i>
-          </h2>
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/videos-comparison-to-prior-works/step-5000__file_id__PhysGenPoke1__xpos_0.60__ypos_0.39__angle_180.00__force_0.50__video_0_bold_arrow.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>Recreating a <b><a href="https://liuff19.github.io/Physics3D/" target="_blank">Physics3D</a></b> demo</i>
-          </h2>
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/videos-comparison-to-prior-works/step-5000__file_id__Physics3DPoke1__xpos_0.68__ypos_0.73__angle_0.00__force_0.50__video_0_bold_arrow.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>Recreating a <b><a href="https://supertan0204.github.io/physmotion_website/" target="_blank">PhysMotion</a></b> demo</i>
-          </h2>
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/videos-comparison-to-prior-works/step-5000__file_id__PhysMotionPoke1__xpos_0.51__ypos_0.55__angle_0.00__force_0.50__video_0_bold_arrow.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>Recreating a <b><a href="https://by-luckk.github.io/PhysGen3D/" target="_blank">PhysGen3D</a></b> demo</i>
-          </h2>
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/videos-comparison-to-prior-works/step-5000__file_id__PhysGen3DPoke1__xpos_0.61__ypos_0.44__angle_180.00__force_0.50__video_0_bold_arrow.mp4" type="video/mp4">
-          </video>
-        </div>
-
-      </div>
+      <video poster="" autoplay="" muted="" loop="" playsinline="">
+        <source src="./goal-force-static/videos_training_data/Goal Force website (training data v1).mp4" type="video/mp4">
+      </video>
 
     </div>
   </div>
 </section>
+
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -1043,209 +962,14 @@ physics-aware planning without reliance on external engines.
 
       <video poster="" autoplay="" muted="" loop="" playsinline="">
         <source src="./goal-force-static/failure_cases/Goal Force website (limitations v1).mp4" type="video/mp4">
-          </video>
+      </video>
 
     </div>
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="columns is-multiline is-variable is-4 is-vcentered is-centered" style="padding-top: 0;">
-    <div class="column is-four-fifths"> <div class="has-text-centered"> <div class="columns is-centered has-text-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">Analysis of Effect of Text Keywords on Generalization</h2>
-          </div>
-        </div>
-
-        <div class="columns is-centered">
-          <div class="column is-two-thirds"> <h2 class="subtitle">
-              We find that the usage of standard keywords (e.g. wind/blow/breeze) <b>at train time</b> are crucial for generalization of the wind model. Interestingly
-              whether they are present or not at inference time does not seem to matter significantly. We hypothesize that using these keywords at train time allows
-              the model to connect the conditioning signal with these keywords and the video distributions they represent.
-            </h2>
-          </div>
-        </div>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-full-width">
-            <h3 class="title is-4">"Wind" keyword is important at train time but not at inference time</h3>
-            <video class="responsive-video" poster="" autoplay="" muted="" loop="" playsinline="" style="width: 70%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-              <source src="./goal-force-static/analysis/analysis_keywords_joint.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-full-width" style="margin-top: 3rem; margin-bottom: 1.5rem;">
-            <h2 class="title is-3">Analysis of Effect of Visual Diversity on Generalization</h2>
-          </div>
-        </div>
-        
-
-        <div class="columns is-centered" style="margin-top: 1.5rem;"> 
-          <div class="column is-two-thirds"> 
-            <div class="columns is-variable is-3"> 
-
-              <div class="column is-half"> 
-                <div class="has-text-centered">
-                  <!-- <div class="subtitle-with-button" style="margin-bottom: 0.5rem;"> 
-                    <h2 class="title is-4">Number of Flags for Wind</h2>
-                  </div> -->
-          <div class="column has-text-justified"> <h2 class="subtitle">
-              Our main finding is the surprising generalization given limited paired data; 
-              however this generalization still requires strategically selecting certain types of visual diversity. 
-              Here we ablate several of these types of diversity and their effects when they are removed.
-              While we find the generalization ability promising, we also believe that more diverse training data will improve the robustness of the model. 
-            </h2>
-          </div>
-                </div>
-              </div>
-              
-              <div class="column is-half"> <div class="has-text-centered">
-                  <div class="subtitle-with-button" style="margin-bottom: 0.5rem;">
-                    <h2 class="title is-4" >Background Diversity</h2>
-                  </div>
-                  <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-                    <source src="./goal-force-static/analysis/analysis_diversity_background.mp4" type="video/mp4">
-                  </video>
-              </div>
-              
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="columns is-centered" style="margin-top: 1.5rem;"> 
-          <div class="column is-two-thirds"> 
-            <div class="columns is-variable is-3"> 
-
-              <div class="column is-half"> 
-                <div class="has-text-centered">
-                  <div class="subtitle-with-button" style="margin-bottom: 0.5rem;"> 
-                    <h2 class="title is-4">Number of Flags for Wind</h2>
-                  </div>
-                  <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-                    <source src="./goal-force-static/analysis/analysis_diversity_flag.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </div>
-              
-              <div class="column is-half"> <div class="has-text-centered">
-                  <div class="subtitle-with-button" style="margin-bottom: 0.5rem;">
-                    <h2 class="title is-4" >Number of Balls for Poke</h2>
-                  </div>
-                  <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-                    <source src="./goal-force-static/analysis/analysis_diversity_ball.mp4" type="video/mp4">
-                  </video>
-              </div>
-              
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <br><br>
-      <div class="columns is-centered has-text-centered">
-        <h2 class="title is-3">Limitations</h2>
-      </div>
-      <br>
-
-      <div class="columns is-centered has-text-centered">
-        <h2 class="title is-4">Failure Case #1: The Physics is Out-of-Domain for the Base Video Model</h2>
-      </div>
 
 
-      <div class="columns is-centered"> 
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>The dust is blown in the prompted direction, but the base video model has difficulty generating a physically plausible person-plow-ground interaction</i>
-          </h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>The kite is blown in the prompted direction, but the base video model has difficulty generating a physically plausible video of a kite dragging a person</i>
-          </h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>The egg rolls in the prompted direction, but the base video model has difficulty rolling non-spherical objects, so the egg appears to float</i>
-          </h2>
-        </div>
-      </div>
-
-      <div class="columns is-centered"> 
-        <div class="column">
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/failure_cases/step-5000__file_id__dust2__speed_0.50__angle_0.0__video_3_prompt.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column">
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/failure_cases/step-5000__file_id__kite2__speed_0.67__angle_0.0__video_0_prompt.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column">
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/failure_cases/step-5000__file_id__egg1__xpos_0.22__ypos_0.47__angle_270.00__force_0.50___video_0_with_pretty_force_prompt.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-
-
-      <div class="columns is-centered has-text-centered">
-        <h2 class="title is-4">Failure Case #2: The Base Video Model's Prior Competes with the Force Prompt </h2>
-      </div>
-
-      <div class="columns is-centered"> 
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>The rocking chair moves in the prompted direction, but the base video model has trouble distinguishing between foreground and background objects</i>
-          </h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>
-              The rubber duck moves in the prompted direction but bobs up and down due to the base model's prior. 
-              Also, all objects move because the base model struggles with object atomicity for complex scenes
-            </i>
-          </h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle has-text-centered">
-            <i>The confetti moves in the prompted direction, but the base video model forces the scene to conjure extra confetti</i>
-          </h2>
-        </div>
-      </div>
-
-      <div class="columns is-centered"> 
-        <div class="column">
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/failure_cases/step-5000__file_id__rockingchair1__xpos_0.32__ypos_0.58__angle_0.00__force_0.50___video_0_with_pretty_force_prompt.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column">
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/failure_cases/step-5000__file_id__rubberduck1__xpos_0.47__ypos_0.49__angle_180.00__force_0.50___video_0_with_pretty_force_prompt.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column">
-          <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto;">
-            <source src="./goal-force-static/failure_cases/step-5000__file_id__confetti3__speed_0.50__angle_180.0__video_2_prompt.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
 
