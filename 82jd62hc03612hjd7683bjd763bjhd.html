@@ -907,46 +907,30 @@ physics-aware planning without reliance on external engines.
     <div class="hero-body">
       <br><br>
       <div class="columns is-centered has-text-centered">
-        <h2 class="title is-3">Training dataset diversity</h2>
+        <h2 class="title is-3">Synthetic Training Dataset</h2>
       </div>
 
-
-      <br><br>
+      <br>
       <h2 class="subtitle has-text-centered">
-         The global wind force model is trained on 15k synthetic videos of flags in the wind.
-         The model learns how wind is supposed to affect the flags and generalizes the wind control signal
-         to diverse types of motions, including tethered and aerodynamic motion, as well as fluid dynamics.
-         Pictured here are three different scenes of flags being blown to the right with varying force magnitudes.
+         Our synthetic training dataset is in three parts: 
+         dominos (generated using Blender), balls (generated using Blender), and a flower (generated using PhysDreamer).
+         Because the dominos and balls involve collision chain reactions, 
+         they are used to teach the model direct force (top, <b style="color:red">red arrow</b>) 
+         as well as the goal force (bottom, <b style="color:green">green arrow</b>).
       </h2>
       
 
       <video poster="" autoplay="" muted="" loop="" playsinline="">
-        <source src="./goal-force-static/videos_training_data/flag/angle_45.mp4" type="video/mp4">
+        <source src="./goal-force-static/videos_training_data/Goal Force website (training data v1).mp4" type="video/mp4">
       </video>
 
-
-
-      <br><br>
-      <h2 class="subtitle has-text-centered">
-        The local point force model is trained on 11k videos of plants being poked, and 12k videos of balls being poked.
-        This unified dataset allows for modeling of linear motions, as well as oscillatory and complex motions.
-        Pictured here are three different scenes of plants being being poked to the left with varying force magnitudes, 
-        as well as three scenes of soccer balls being poked upwards with varying force magnitudes.
-      </h2>
-      <video poster="" autoplay="" muted="" loop="" playsinline="">
-        <source src="./goal-force-static/videos_training_data/plant/angle_180.mp4" type="video/mp4">
-      </video>
-      <video poster="" autoplay="" muted="" loop="" playsinline="">
-        <source src="./goal-force-static/videos_training_data/ball_soccer/angle_90.mp4" type="video/mp4">
-      </video>
-
-      <br><br>
+      <!-- <br><br>
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <a href="gallery_synthetic_training_data.html" class="button is-secondary"><i><b>See more examples!</b></i></a>
         </div>
       </div>
-      <br><br>
+      <br><br> -->
 
     </div>
   </div>
