@@ -1379,47 +1379,52 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- STEP 3: CREATE SEED BUTTONS ---
-  function createSeedButtons(seedString, fullFolderPath, basePngPath) {
-    seedButtonContainer.innerHTML = '';
-    currentActiveSeedButton = null;
+    function createSeedButtons(seedString, fullFolderPath, basePngPath) {
+      seedButtonContainer.innerHTML = '';
+      currentActiveSeedButton = null;
 
-    const seedIndices = seedString.split(',');
+      // Split and filter to get only valid seed indices
+      const seedIndices = seedString.split(',').filter(seed => seed.trim() !== "");
 
-    seedIndices.forEach((seedIdx, index) => {
-      if (seedIdx.trim() === "") return;
+      // **START: New logic to hide/show the container**
+      if (seedIndices.length <= 1) {
+        seedButtonContainer.style.display = 'none';
+      } else {
+        seedButtonContainer.style.display = 'flex'; // Use 'flex' since your CSS defines it as flex
+      }
+      // **END: New logic**
 
-      const button = document.createElement('button');
-      button.className = 'seed-button';
-      button.textContent = `Seed ${seedIdx.trim()}`;
-      const videoPath = fullFolderPath + 'seed_' + seedIdx.trim() + '.mp4';
-      button.dataset.videoSrc = videoPath;
+      seedIndices.forEach((seedIdx, index) => {
+        // The filter above already handled empty strings, but for safety:
+        if (seedIdx.trim() === "") return;
 
-      button.addEventListener('click', () => {
-        if (currentActiveSeedButton) {
-          currentActiveSeedButton.classList.remove('is-active');
-        }
-        button.classList.add('is-active');
-        currentActiveSeedButton = button;
-        playVideo(button.dataset.videoSrc); // Click restarts video
-      });
+        const button = document.createElement('button');
+        button.className = 'seed-button';
+        button.textContent = `Seed ${seedIdx.trim()}`;
+        const videoPath = fullFolderPath + 'seed_' + seedIdx.trim() + '.mp4';
+        button.dataset.videoSrc = videoPath;
 
-      seedButtonContainer.appendChild(button);
-      
-      // Auto-select first seed
-      if (index === 0) {
-        button.click();
-      }
-    });
+        button.addEventListener('click', () => {
+          if (currentActiveSeedButton) {
+            currentActiveSeedButton.classList.remove('is-active');
+          }
+          button.classList.add('is-active');
+          currentActiveSeedButton = button;
+          playVideo(button.dataset.videoSrc); // Click restarts video
+        });
 
-    // When video ends, show PNG again
-    // displayVideo.onended = () => {
-    //   showImage(basePngPath);
-    //   if (currentActiveSeedButton) {
-    //     currentActiveSeedButton.classList.remove('is-active');
-    //     currentActiveSeedButton = null;
-    //   }
-    // };
-  }
+        seedButtonContainer.appendChild(button);
+        
+        // Auto-select first seed
+        if (index === 0) {
+          button.click();
+        }
+      });
+
+      // When there is only 1 seed, it is already auto-selected by the logic above.
+      // The container is hidden, and the video starts playing for that single seed.
+    }
+
 
   // --- STEP 2: CREATE GOAL FORCE BUTTONS ---
   function createGoalForceButtons(goalForcesData, categoryDir) {
