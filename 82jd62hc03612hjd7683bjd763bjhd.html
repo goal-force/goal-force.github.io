@@ -521,26 +521,22 @@
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
           <p>
-            We investigate using physical forces as a control
-signal for video generation and propose <b>force prompts</b> which enable users to interact
-with images through both localized point forces, such as poking a plant, and global
-wind force fields, such as wind blowing on fabric.
+Recent advancements in video generation have enabled the development of "world models"
+capable of simulating potential futures for robotics and planning. 
+However, specifying precise goals for these models remains a challenge; 
+text instructions are often too abstract to capture physical nuances, 
+while target images are frequently infeasible to specify for dynamic tasks. 
 </p>
-<p>
-The main challenge of force prompting is the difficulty in obtaining high quality paired force-video training
-data. Our key finding is that video generation models can <b>generalize
-remarkably well</b> when adapted to follow physical force conditioning from videos
-synthesized by Blender, even with limited demonstrations of few objects (e.g.,
-flying flags, rolling balls, etc.). Our method can generate videos which simulate
-forces across diverse geometries, settings, and materials. We also try to understand
-the source of this generalization and perform ablations on the training data that
-reveal two key elements: visual diversity and the use of specific text keywords
-during training.
+To address this, we introduce <b>Goal Force</b>, a novel framework that allows users to define goals 
+via explicit force vectors and intermediate dynamics, mirroring how humans conceptualize physical tasks. 
+We train a video generation model on a curated dataset of synthetic causal primitives—such as 
+elastic collisions and falling dominos—teaching it to propagate forces through time and space. 
+Despite being trained on simple physics data, our model exhibits remarkable zero-shot generalization to complex, 
+real-world scenarios, including tool manipulation and multi-object causal chains. 
 </p>
-<p>
-In addition, our approach is trained on only around 15k training examples
-for a single day on four A100 GPUs, making these techniques broadly accessible for
-future research.
+Our results suggest that by grounding video generation in fundamental physical interactions, 
+models can emerge as implicit neural physics simulators, enabling precise, 
+physics-aware planning without reliance on external engines.
           </p>
         </div>
       </div>
