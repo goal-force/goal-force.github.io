@@ -524,13 +524,8 @@ physics-aware planning without reliance on external engines.
       </div>
       <h2 class="subtitle">
         A user can interact with an image by specifying a goal force vector (location, angle, magnitude) on the image. 
-        With this goal force prompt, the video generator then generates the resultant scene. No physics simulator used at inference time!
-      </h2>
-      <h2 class="subtitle">        
-        While currently the results are <b style="color:red">not real-time or per-frame 
-          causal</b> (though it is causal with respect to the conditioning signal), 
-          we believe that they show the potential of future video generation models 
-          as they get faster, more efficient, and more powerful.
+        With this goal force prompt, the video generator then generates the resultant scene. 
+        In particular, <b>no physics simulator or 3D assets are required at inference time.</b>
       </h2>
 
       <section class="section hero is-light" id="interactiveDemoGallery">
@@ -909,7 +904,9 @@ physics-aware planning without reliance on external engines.
       <br>
       <h2 class="subtitle has-text-centered">
          We find that for situations involving tool use, it is important to specify high level information such as the tool 
-         and how it is used (4th and 5th columns).
+         and how it is used (4th, 5th columns).
+         If you don't specify the tool in the text prompt,
+         then the model might find another way to accomplish the goal force (1st, 2nd, 3rd columns).
       </h2>
       
 
