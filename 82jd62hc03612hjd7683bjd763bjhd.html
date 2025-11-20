@@ -217,7 +217,7 @@
       gap: 10px;
       margin-bottom: 10px; /* Space between goal force buttons and seed buttons */
       padding-bottom: 10px;
-      border-bottom: 1px solid #eee; /* subtle separator */
+      /* border-bottom: 1px solid #eee;  */
   }
 
   .goal-force-button {
@@ -381,7 +381,7 @@
 
         <div class="columns is-centered has-text-centered">
           <div class="column is-full-width">
-            <h2 class="title is-3">Goal Force</h2>
+            <h2 class="title is-3">Goal Force Prompting</h2>
               <video class="responsive-video" poster="" autoplay="" muted="" loop="" playsinline="" style="width: 65%; height: auto; display: block; margin-left: auto; margin-right: auto;">
                 <source src="./goal-force-static/videos_teaser/teaser_explaining_goal_force.mp4" type="video/mp4">
               </video>
@@ -390,8 +390,8 @@
 
         <!-- Weird for this to be here, but whatever -->
         <div class="columns is-centered has-text-centered">
-          <div class="column is-full-width" style="margin-top: 3rem; margin-bottom: 1.5rem;">
-            <h2 class="title is-3">Video Generation Model Generalizes Goal Force Conditioning</h2>
+          <div class="column is-full-width" style="margin-top: 3rem; margin-bottom: -2.0rem;">
+            <h2 class="title is-3" style="margin-bottom: 0;">Video Generation Model Generalizes Goal Force Conditioning</h2>
           </div>
         </div>
 
@@ -759,13 +759,13 @@ physics-aware planning without reliance on external engines.
           </div>
           
           <div id="demo-display-area">
-            <div class="goal-force-buttons-container" id="goal-force-buttons-container"></div>
-            <div class="seed-buttons-container" id="seed-buttons-container"></div>
-            
             <div id="demo-display-container">
               <img id="demo-display-image" src="" alt="Selected demo PNG" style="display: none;">
               <video id="demo-display-video" playsinline autoplay muted loop style="display: none;"></video>
             </div>
+
+            <div class="goal-force-buttons-container" id="goal-force-buttons-container"></div>
+            <div class="seed-buttons-container" id="seed-buttons-container"></div>
           </div>
 
         </div>
