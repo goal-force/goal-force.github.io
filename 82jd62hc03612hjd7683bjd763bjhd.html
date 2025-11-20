@@ -279,6 +279,14 @@
       border-color: #3273dc;
   }
 
+  .subtitle-with-button {
+          min-height: 4.5rem;      /* Reserve space for 2 lines of text */
+          display: flex;           /* Use flexbox to manage alignment */
+          align-items: flex-end;   /* Push text to the bottom of the container */
+          justify-content: center; /* Center text horizontally */
+          padding-bottom: 5px;     /* Small gap between text and video */
+  }
+
   /* Container for the main display (image or video) */
   #demo-display-container {
       max-width: 560px;
@@ -393,7 +401,6 @@
                 <div class="has-text-centered">
                   <div class="subtitle-with-button" style="margin-bottom: 0.5rem;">
                     <h2 class="title is-4" style="color:lightblue">Generalizes to Different Settings and Materials</h2>
-                    <a href="index.html#global-force-prompts-demo" class="button is-secondary subtitle-button">See More</a>
                   </div>
                   <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
                     <source src="./goal-force-static/videos_teaser/Goal Force website (teaser cell 0,0) (740 x 375 px).mp4" type="video/mp4" controls height="240">
@@ -403,9 +410,8 @@
 
               <div class="column is-half">
                 <div class="has-text-centered">
-                  <div class="subtitle-with-button" style="margin-bottom: 0.5rem; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                  <div class="subtitle-with-button" style="margin-bottom: 0.5rem;">
                     <h2 class="title is-4" style="color:lightblue">Generalizes to Tool-Object Interaction</h2>
-                    <a href="index.html#local-force-prompts-demo" class="button is-secondary subtitle-button">See More</a>
                   </div>
                   <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
                     <source src="./goal-force-static/videos_teaser/Goal Force website (teaser cell 0,1) (740 x 375 px).mp4" type="video/mp4">
@@ -422,7 +428,6 @@
                 <div class="has-text-centered">
                   <div class="subtitle-with-button" style="margin-bottom: 0.5rem;">
                     <h2 class="title is-4" style="color:lightblue">Generalizes to Human-Object Interaction</h2>
-                    <a href="index.html#global-force-prompts-demo" class="button is-secondary subtitle-button">See More</a>
                   </div>
                   <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
                     <source src="./goal-force-static/videos_teaser/Goal Force website (teaser cell 1,0) (740 x 375 px).mp4" type="video/mp4" controls height="240">
@@ -432,9 +437,8 @@
 
               <div class="column is-half">
                 <div class="has-text-centered">
-                  <div class="subtitle-with-button" style="margin-bottom: 0.5rem; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                  <div class="subtitle-with-button" style="margin-bottom: 0.5rem;">
                     <h2 class="title is-4" style="color:lightblue">Generalizes to (non-Human)-Object Interaction</h2>
-                    <a href="index.html#local-force-prompts-demo" class="button is-secondary subtitle-button">See More</a>
                   </div>
                   <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
                     <source src="./goal-force-static/videos_teaser/Goal Force website (teaser cell 1,1) (740 x 375 px).mp4" type="video/mp4">
@@ -452,7 +456,6 @@
                 <div class="has-text-centered">
                   <div class="subtitle-with-button" style="margin-bottom: 0.5rem;">
                     <h2 class="title is-4" style="color:pink">Probabilistic Task Completion</h2>
-                    <a href="index.html#global-force-prompts-demo" class="button is-secondary subtitle-button">See More</a>
                   </div>
                   <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
                     <source src="./goal-force-static/videos_teaser/Goal Force website (teaser cell 2,0) (740 x 375 px).mp4" type="video/mp4">
@@ -464,7 +467,6 @@
                 <div class="has-text-centered">
                   <div class="subtitle-with-button" style="margin-bottom: 0.5rem;">
                     <h2 class="title is-4" style="color:pink">Visual Planning with Physical Constraints</h2>
-                    <a href="index.html#mass-understanding" class="button is-secondary subtitle-button">See More</a>
                   </div>
                   <video poster="" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
                     <source src="./goal-force-static/videos_teaser/Goal Force website (teaser cell 2,1) (740 x 375 px).mp4" type="video/mp4">
